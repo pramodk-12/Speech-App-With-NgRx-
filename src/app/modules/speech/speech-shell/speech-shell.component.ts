@@ -7,8 +7,7 @@ import { SpeechService } from '../speech.service';
 @Component({
   selector: 'app-speech-shell',
   templateUrl: './speech-shell.component.html',
-  styleUrls: ['./speech-shell.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  styleUrls: ['./speech-shell.component.scss']
 })
 export class SpeechShellComponent implements OnInit {
   // speeches: { authorName: string; date: string; keywords: string; speech: string; id: string; }[];
