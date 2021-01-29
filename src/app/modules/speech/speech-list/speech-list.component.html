@@ -1,0 +1,21 @@
+<div class="maincontent-div1" >
+    <div class="list-items" >
+        <table class="table-class">
+          <thead>
+            <tr>
+              <th>Author</th>
+              <th>Date</th>
+              <th>Keywords</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr  (click) = 'sendSpeech(speech.id)' *ngFor = 'let speech of speeches' >
+              <td>{{speech.authorName}}</td>
+              <td>{{speech.date}}</td>
+              <td>{{speech.keywords}}</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+</div>
+

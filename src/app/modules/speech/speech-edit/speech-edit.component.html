@@ -1,0 +1,26 @@
+<div class="my-container" >
+    <div class="maincontent-div">
+      <div class="speech-header1" >
+        <h4 class="heading1" *ngIf = "speechType" > {{speechType}} </h4>
+      </div>
+        <div  class="grid-container" >
+            <form [formGroup]="speechForm" (ngSubmit) = "saveSpeech()" >
+                <div class="speech-content" >
+                    <textarea  id="speech"
+                    name="speech" formControlName = "speechText"
+                    placeholder="Speech here..." class="text-area " cols="30" rows="10"></textarea>
+                </div>
+                <div class="speech-details" >
+                    <input  name="name" formControlName = "authorName"  type="text" placeholder="Author" class="author-name form-control" >
+                    <input  name="keywords" formControlName = "keywords" type="text" placeholder="keywords" class="keywords form-control" >
+                    <input  name="date" formControlName = "date"  type="date" placeholder="Date of speech" class="date form-control" >
+                </div>
+                <div class="footer-buttons" >
+                    <button class="custom-button"   type="submit" [disabled] = "!speechForm.valid"  >Save Speech</button>
+                    <button  type="button" (click) = "cancel()" *ngIf = "speechType == 'New Speech'" class="custom-button" >Cancel</button>
+                    <button  type="button" (click) = "deleteSpeech()" *ngIf = "speechType == 'Edit Speech'" class="custom-button" >Delete</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

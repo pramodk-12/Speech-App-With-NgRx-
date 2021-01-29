@@ -1,0 +1,45 @@
+@import "../../../../assets/scss/variables.scss";
+
+.maincontent-div1 {
+  margin-top: 2em;
+}
+
+.list-items {
+  height: 400px;
+  overflow-y: auto;
+}
+
+.table-class {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+th,
+tr {
+  text-align: center;
+}
+
+th {
+  background-color: rgb(15, 51, 85);
+  color: white;
+  padding: 10px 0;
+  font-family: "DidactGothic-Regular";
+  font-weight: 800;
+}
+
+td {
+  font-family: "Karla-Regular";
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+tbody > tr:nth-child(even) {
+  background-color: rgb(206, 179, 179);
+}
+
+tbody>tr:hover {
+  cursor: pointer;
+  background-color: #000000;
+  color: white;
+}

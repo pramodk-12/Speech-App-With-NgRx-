@@ -1,0 +1,26 @@
+
+<div class="my-container" >
+    <div class="header">
+        <h5 class="header-text" >Speech-App</h5>
+    </div>
+    <div class="body-container" >
+        <div class="maincontent-div" >
+            <div class="buttons-search" >
+                <div class="custom-buttons" >
+                    <button class="route-buttons" [routerLink] = "['list']"  (click) = 'home()'  >View My Speeches</button>
+                    <button class="route-buttons" [routerLink] = "['edit',0]" (click)  = 'newSpeech()'  > Submit a new speech </button>
+                </div>
+
+            </div>
+            <div>
+              <router-outlet></router-outlet>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- *ngIf = "toggle$ | async " -->
+<!-- [ngClass]= "{'active2': (toggle$ | async) == true }" -->
+<!-- [ngClass]="{'active1': speech?.id === (speechselected$ | async)?.id}" -->
+<!-- [ngClass]="{'active': product?.id === (selectedProduct$ | async)?.id}" -->

@@ -1,0 +1,104 @@
+@import "../../../../assets/scss/variables.scss";
+
+h5 {
+    margin-bottom: 0!important;
+}
+
+
+.desktop-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+
+.maincontent-div {
+    // padding: 0.5em;
+    // padding-top: 0;
+    margin: 2em 0em 0em 0em;
+    border: 2px solid rgb(15, 51, 85);
+
+}
+
+.speech-content {
+    padding: 0.5em;
+    // color: $bg-black;
+    height: 285px;
+    overflow-y: auto;
+}
+
+.speech-header {
+  background-color:rgb(15, 51, 85) ;
+  text-align: center;
+  padding: 0.5em;
+}
+
+.heading {
+  font-family: 'DidactGothic-Regular';
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+}
+
+.normal-text {
+    font-family: 'B612-Regular';
+    font-size: $h5;
+}
+
+.bold-text {
+    font-family: 'DidactGothic-Regular';
+    font-weight: 800;
+    font-size: $h4;
+}
+
+.speech-content-text {
+    text-indent: 1em;
+}
+
+h5 {
+    padding: 0.5em 0em;
+}
+
+.footer-buttons {
+    margin-top: 1em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+// .custom-button {
+//     background-color: white;
+//     color: black;
+//     box-shadow: 0px 0px 5px black;
+//     border-radius: 5px;
+//     font-family: 'Josefin-Bold';
+//     font-size: $h6;
+//     padding: 0.5em 2em;
+//     border: 2px solid white;
+//     margin-left: 1em;
+// }
+
+// .custom-button:hover {
+//     background-color: black;
+//     color: white;
+// }
+
+.custom-button {
+  font-family: "DidactGothic-Regular";
+  font-weight: 800;
+  box-shadow: 0px 0px 5px black;
+  border: none;
+  padding: 0.5em 2em;
+  background-color: rgb(15, 51, 85);
+  color: white;
+  outline: none;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.custom-button:hover {
+  background-color: #d8c5ff;
+  color: black;
+}
+
+

@@ -1,0 +1,27 @@
+<div class="my-container" >
+    <div  class="desktop-container" >
+        <div  class="maincontent-div " >
+          <div class="speech-header" >
+            <h4 class="heading" >{{speech.authorName}}</h4>
+          </div>
+            <div class="speech-content" >
+                <div>
+                    <h5 class="speech-date normal-text" > <span class="bold-text" > Date of Speech: </span> {{speech.date}} </h5>
+                    <h5 class="speech-content-head bold-text" > <u>Content:</u>  </h5>
+                    <h5 class="speech-content-text normal-text" > {{speech.speechText}} </h5>
+                    <h5 class="keywords normal-text"> <span class="bold-text" >Keywords:</span> {{speech.keywords}} </h5>
+                </div>
+            </div>
+        </div>
+        <div class="footer-buttons" >
+            <button class="custom-button" [routerLink] = "['/speeches/edit',speech.id]"   >Edit Speech</button>
+            <button class="custom-button" (click) = "deleteSpeech()"   >Delete Speech </button>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
