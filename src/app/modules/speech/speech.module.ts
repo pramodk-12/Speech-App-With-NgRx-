@@ -6,6 +6,10 @@ import { SpeechEditComponent } from './speech-edit/speech-edit.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SpeechShellComponent } from './speech-shell/speech-shell.component';
 import { SpeechListComponent } from './speech-list/speech-list.component';
+import { StoreModule } from '@ngrx/store';
+import { speechReducer } from './State/speech.reducer';
+import { EffectsModule } from '@ngrx/effects';
+import { SpeechEffects } from './State/speech.effects';
 
 
 
@@ -21,6 +25,8 @@ import { SpeechListComponent } from './speech-list/speech-list.component';
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
+    StoreModule.forFeature('speeches',speechReducer),
+    EffectsModule.forFeature([SpeechEffects]),
     RouterModule.forChild([
       {
         path: '',

@@ -43,3 +43,18 @@ tbody>tr:hover {
   background-color: #000000;
   color: white;
 }
+
+.errorMessagediv {
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+  padding: 5em 0em;
+  // border: 2px solid rgb(15, 51, 85) ;
+}
+
+.errorMessage {
+  font-family: 'DidactGothic-Regular';
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 0;
+}

@@ -5,3 +5,5 @@ export interface Speech {
     speechText:string;
     id: number;
 }
+
+

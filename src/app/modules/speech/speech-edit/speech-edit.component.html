@@ -1,5 +1,5 @@
 <div class="my-container" >
-    <div class="maincontent-div">
+    <div class="maincontent-div" *ngIf = "!(errorMessage$ | async) " >
       <div class="speech-header1" >
         <h4 class="heading1" *ngIf = "speechType" > {{speechType}} </h4>
       </div>
@@ -22,5 +22,9 @@
                 </div>
             </form>
         </div>
+    </div>
+    <div class="errormessagediv" *ngIf = "errorMessage$ | async as errorMessage" >
+      <h5 class="errormessage" > {{errorMessage}} </h5>
+      <button class="home-button" [routerLink] = "['/speeches/list']" > Home </button>
     </div>
 </div>

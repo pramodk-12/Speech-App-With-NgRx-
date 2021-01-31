@@ -1,6 +1,6 @@
 <div class="my-container" >
-    <div  class="desktop-container" >
-        <div  class="maincontent-div " >
+    <div  class="desktop-container" *ngIf = "speech$ | async as speech" >
+        <div  class="maincontent-div "  >
           <div class="speech-header" >
             <h4 class="heading" >{{speech.authorName}}</h4>
           </div>
@@ -15,10 +15,13 @@
         </div>
         <div class="footer-buttons" >
             <button class="custom-button" [routerLink] = "['/speeches/edit',speech.id]"   >Edit Speech</button>
-            <button class="custom-button" (click) = "deleteSpeech()"   >Delete Speech </button>
+            <button class="custom-button" (click) = "deleteSpeech(speech.id)"   >Delete Speech </button>
         </div>
     </div>
-
+    <div class="errormessagediv" *ngIf = "errorMessage$ | async as errorMessage" >
+      <h5 class="errormessage" > {{errorMessage}} </h5>
+      <button class="home-button" [routerLink] = "['/speeches/list']" > Home </button>
+    </div>
 </div>
 
 
